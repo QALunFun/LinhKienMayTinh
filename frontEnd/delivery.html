@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <!-- LINK CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <!-- Title -->
+    <link rel="icon" href="./assets/image/logo.png" type="x-icon/text">
+    <title>Linh Kiện Máy Tính | Giỏ Hàng</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="logo">
+                <img src="./assets/image/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul class="nav">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index.php" onclick="window.open('index.php'); window.open('#new-prod');">New
+                            Product</a></li>
+                    <li><a href="index.php" onclick="window.open('index.php'); window.open('#hot-prod');">Hot
+                            Product</a></li>
+                    <li><a href="index.php" onclick="window.open('index.php'); window.open('#sale-prod');">Product
+                            Sale</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="others">
+                <ul class="nav-others">
+                    <li>
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <i class="others-search ti-search"></i>
+                    </li>
+                    <li><a class="ti-crown" href=""></a></li>
+                    <li><a class="ti-shopping-cart" href=""></a></li>
+                    <li><a class="ti-user" href=""></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- -------------- END OF HEADER -------------- -->
+
+        <!-- Thong tin giao hang -->
+        <div class="delivery">
+            <div class="cart-container">
+                <div class="delivery-header">
+                    <div class="delivery-top">
+                        <div class="delivery-top-icon">
+                            <i class="ti-shopping-cart-full"></i>
+                        </div>
+                        <div class="delivery-top-icon">
+                            <i class="ti-location-pin"></i>
+                        </div>
+                        <div class="delivery-top-icon">
+                            <i class="ti-money"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="delivery-main row">
+                    <div class="delivery-main-left">
+                        <h2 class="text-red">Vui lòng chọn địa chỉ giao hàng</h2>
+                        <div class="deml-login row">
+                            <i class="ti-arrow-right"></i>
+                            <p><b>Đăng nhập </b>(Nếu bạn đã có tài khoản SNAKE-SHOP)</p>
+                        </div>
+                        <div class="deml-customer row">
+                            <input type="radio" checked name="loaikh" value="khachle">
+                            <p><b>Khách lẻ </b>(Nếu bạn không muốn lưu lại thông tin)</p>
+                        </div>
+                        <div class="deml-signin row">
+                            <input type="radio" name="loaikh" value="khachle">
+                            <p><b>Đăng ký </b>(Tạo tài khoản mới với thông tin bên dưới)</p>
+                        </div>
+                        <form action="" method="post">
+                            <div class="deml-input row-col">
+                                <div class="deml-input-top-list row">
+                                    <div class="deml-input-top">
+                                        <label for="name">Họ tên <span><sup class="text-red">*</sup></span></label>
+                                        <input type="text" required name="" id="name">
+                                    </div>
+                                    <div class="deml-input-top">
+                                        <label for="number-phone">Điện thoại <span><sup
+                                                    class="text-red">*</sup></span></label>
+                                        <input type="text" required name="" id="number-phone">
+                                    </div>
+                                    <div class="deml-input-top">
+                                        <label for="tinhtp">Tỉnh/TP <span><sup class="text-red">*</sup></span></label>
+                                        <input type="text" required name="" id="tinhtp">
+                                    </div>
+                                    <div class="deml-input-top">
+                                        <label for="quanhuyen">Quận/Huyện <span><sup
+                                                    class="text-red">*</sup></span></label>
+                                        <input type="text" required name="" id="quanhuyen">
+                                    </div>
+                                </div>
+                                <div class="deml-input-bottom-list">
+                                    <div class="deml-input-bottom">
+                                        <label for="phuongxa">Phường/Xã <span><sup
+                                                    class="text-red">*</sup></span></label>
+                                        <input type="text" required name="" id="phuongxa">
+                                    </div>
+                                    <div class="deml-input-bottom">
+                                        <label for="diachi">Địa chỉ <span><sup class="text-red">*</sup></span></label>
+                                        <input type="text" required name="" id="diachi">
+                                    </div>
+                                </div>
+
+                                <div class="deml-button row">
+                                    <a href="./shoppingcart.html" class="text-gold">
+                                        <p><span><i class="ti-angle-double-left"></i></span>Quay lại giỏ hàng</p>
+                                    </a>
+                                    <button><a href="./payment.html"><b>THANH TOÁN VÀ GIAO HÀNG</b></a></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="delivery-main-right">
+                        <table>
+                            <tr>
+                                <th>Tên sản phẩm</th>
+                                <th>Giảm giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                            </tr>
+
+                            <tr>
+                                <td>Chuột game Asus CERBERUS</td>
+                                <td>- 10%</td>
+                                <td>1</td>
+                                <td>200.000<sup>đ</sup></td>
+                            </tr>
+
+                            <tr>
+                                <td>Mainboard Asrock B560M PRO4</td>
+                                <td>-12%</td>
+                                <td>1</td>
+                                <td>2.799.000<sup>đ</sup></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3">Tổng tiền</td>
+                                <td colspan="3">
+                                    <b>2.999.000<sup>đ</sup></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Thuế VAT</td>
+                                <td colspan="3">
+                                    <b>110.000<sup>đ</sup></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><b>Tổng tiền hàng</b></td>
+                                <td colspan="3" class="text-red">
+                                    <b>3.109.000<sup>đ</sup></b>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------- END OF DELIVERY -------------- -->
+
+        <div id="contact">
+            <div class="contact-product row">
+                <div class="contact-heading row">
+                    <i class="ti-pencil-alt"></i>
+                    <h1>CONTACT</h1>
+                </div>
+                <div class="contact-form">
+                    <div class="contact-form-left">
+                        <p>
+                            <i class="ti-location-pin"></i>
+                            <span>Thanh Hoa City</span>
+                        </p>
+                        <p>
+                            <i class="ti-mobile"></i>
+                            <span>Phone: +84 19103100162</span>
+                        </p>
+                        <p>
+                            <i class="ti-email"></i>
+                            <span>Email: email@hotmail.com</span>
+                        </p>
+                    </div>
+                    <div class="contact-form-right">
+                        <form action="">
+                            <div class="cfr-top">
+                                <div class="cfr-top-row cfr-tr-left">
+                                    <input type="text" placeholder="Name" required class="form-input">
+                                </div>
+                                <div class="cfr-top-row cfr-tr-right">
+                                    <input type="email" placeholder="Enter Email" required class="form-input">
+                                </div>
+                            </div>
+                            <div class="cfr-bottom">
+                                <input type="text" placeholder="Message" required class="form-input">
+                            </div>
+                            <input type="submit" value="SEND" class="cfr-btn"></input>
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------- END OF CONTACT ---------------- -->
+        <div id="footer" class="row">
+            <h1 class="ftd-name">Tống Bá Quang Anh</h1>
+            <div class="ftd-birthday row">
+                <h1>Birthday</h1>
+                <input type="date" value="2001-10-20">
+            </div>
+        </div>
+        <!-- -------------- END OF FOOTER -------------- -->
+    </div>
+</body>
+
+<!-- ---------- Link JavaScript ---------- -->
+<script src="./style.js"></script>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <!-- LINK CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <!-- Title -->
+    <link rel="icon" href="./assets/image/logo.png" type="x-icon/text">
+    <title>Linh Kiện Máy Tính | Thanh Toán</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="logo">
+                <img src="./assets/image/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul class="nav">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index.php" onclick="window.open('index.php'); window.open('#new-prod');">New
+                            Product</a></li>
+                    <li><a href="index.php" onclick="window.open('index.php'); window.open('#hot-prod');">Hot
+                            Product</a></li>
+                    <li><a href="index.php" onclick="window.open('index.php'); window.open('#sale-prod');">Product
+                            Sale</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="others">
+                <ul class="nav-others">
+                    <li>
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <i class="others-search ti-search"></i>
+                    </li>
+                    <li><a class="ti-crown" href=""></a></li>
+                    <li><a class="ti-shopping-cart" href=""></a></li>
+                    <li><a class="ti-user" href=""></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- -------------- END OF HEADER -------------- -->
+
+        <!-- Thanh toan don hang -->
+        <div class="payment">
+            <div class="cart-container">
+                <div class="payment-header">
+                    <div class="payment-top">
+                        <div class="payment-top-icon">
+                            <i class="ti-shopping-cart-full"></i>
+                        </div>
+                        <div class="payment-top-icon">
+                            <i class="ti-location-pin"></i>
+                        </div>
+                        <div class="payment-top-icon">
+                            <i class="ti-money"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-main row">
+                    <div class="payment-main-left">
+                        <div class="pml-method-delivery">
+                            <h3>Phương thức giao hàng</h3>
+                            <div class="pml-method-item-delivery">
+                                <input checked type="radio" name="delivery">
+                                <label for="">Giao hàng chuyển phát nhanh</label>
+                            </div>
+                        </div>
+
+                        <div class="pml-method-payment">
+                            <h3>Phương thức thanh toán</h3>
+                            <p>
+                                Mọi dịch vụ đều được bảo mật và mã hóa. Thông tin thẻ tín dụng sẽ không được lưu lại.
+                            </p>
+                            <div class="pml-method-item-payment">
+                                <div class="pml-method-pmitem">
+                                    <input type="radio" name="payment" id="payment-vm">
+                                    <label for="payment-vm">Thanh toán bằng thẻ tín dụng</label>
+                                    <div class="pml-img">
+                                        <img src="./assets/image/payment/visa-mastercard-1-1.png" width="120px" height="40px" alt="">
+                                    </div>
+                                </div>
+                                <div class="pml-method-pmitem">
+                                    <input checked type="radio" name="payment" id="payment-atm">
+                                    <label for="payment-atm">Thanh toán bằng thẻ ATM</label>
+                                    <div class="pml-img">
+                                        <img src="./assets/image/payment/LogoPayment.jpg" alt="">
+                                    </div>
+                                    <p>Hỗ trợ thanh toán online hơn 38 ngân hàng phổ biến tại Việt Nam</p>
+                                </div>
+                                <div class="pml-method-pmitem">
+                                    <input type="radio" name="payment" id="payment-momo">
+                                    <label for="payment-momo">Thanh toán bằng MoMo</label>
+                                    <div class="pml-img">
+                                        <img src="./assets/image/payment/MOMO_logo.png" width="60px"  alt="">
+                                    </div>
+                                </div>
+                                <div class="pml-method-pmitem">
+                                    <input type="radio" name="payment">
+                                    <label for="">Thanh toán tại nhà</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-main-right">
+                        <div class="pmr-button-list">
+                            <div class="pmr-button-item">
+                                <input type="text" placeholder="Mã giảm giá">
+                                <button><i class="ti-check-box"></i></button>
+                            </div>
+                            <div class="pmr-button-item">
+                                <input type="text" placeholder="Mã cộng tác viên">
+                                <button><i class="ti-check-box"></i></button>
+                            </div>
+                        </div>
+                        <div class="pmr-select">
+                            <select name="" id="">
+                                <option value="">Chọn mã nhân viên</option>
+                                <option value="">MSM01</option>
+                                <option value="">MSM02</option>
+                                <option value="">MSM03</option>
+                                <option value="">MSM04</option>
+                                <option value="">MSM05</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-button">
+                    <button>THANH TOÁN</button>
+                </div>
+            </div>
+        </div>
+        <!-- -------------- END OF PAYMENT -------------- -->
+
+        <div id="contact">
+            <div class="contact-product row">
+                <div class="contact-heading row">
+                    <i class="ti-pencil-alt"></i>
+                    <h1>CONTACT</h1>
+                </div>
+                <div class="contact-form">
+                    <div class="contact-form-left">
+                        <p>
+                            <i class="ti-location-pin"></i>
+                            <span>Thanh Hoa City</span>
+                        </p>
+                        <p>
+                            <i class="ti-mobile"></i>
+                            <span>Phone: +84 19103100162</span>
+                        </p>
+                        <p>
+                            <i class="ti-email"></i>
+                            <span>Email: email@hotmail.com</span>
+                        </p>
+                    </div>
+                    <div class="contact-form-right">
+                        <form action="">
+                            <div class="cfr-top">
+                                <div class="cfr-top-row cfr-tr-left">
+                                    <input type="text" placeholder="Name" required class="form-input">
+                                </div>
+                                <div class="cfr-top-row cfr-tr-right">
+                                    <input type="email" placeholder="Enter Email" required class="form-input">
+                                </div>
+                            </div>
+                            <div class="cfr-bottom">
+                                <input type="text" placeholder="Message" required class="form-input">
+                            </div>
+                            <input type="submit" value="SEND" class="cfr-btn"></input>
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------- END OF CONTACT ---------------- -->
+        <div id="footer" class="row">
+            <h1 class="ftd-name">Tống Bá Quang Anh</h1>
+            <div class="ftd-birthday row">
+                <h1>Birthday</h1>
+                <input type="date" value="2001-10-20">
+            </div>
+        </div>
+        <!-- -------------- END OF FOOTER -------------- -->
+    </div>
+</body>
+
+<!-- ---------- Link JavaScript ---------- -->
+<script src="./style.js"></script>
+
+</html>

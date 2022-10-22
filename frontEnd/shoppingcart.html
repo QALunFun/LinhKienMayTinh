@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <!-- LINK CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <!-- Title -->
+    <link rel="icon" href="./assets/image/logo.png" type="x-icon/text">
+    <title>Linh Kiện Máy Tính | Giỏ Hàng</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="logo">
+                <img src="./assets/image/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul class="nav">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index.php" onclick="window.open('index.php'); window.open('#new-prod');">New Product</a></li>
+                    <li><a href="index.php" onclick="window.open('index.php'); window.open('#hot-prod');">Hot Product</a></li>
+                    <li><a href="index.php" onclick="window.open('index.php'); window.open('#sale-prod');">Product Sale</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="others">
+                <ul class="nav-others">
+                    <li>
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <i class="others-search ti-search"></i>
+                    </li>
+                    <li><a class="ti-shopping-cart" href="./shoppingcart.html"></a></li>
+                    <li><a class="ti-user" href="./dangnhap.html"></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- -------------- END OF HEADER -------------- -->
+
+        <div class="shopping-cart">
+            <div class="cart-container">
+                <div class="cart-header">
+                    <div class="cart-top">
+                        <div class="cart-top-icon">
+                            <i class="ti-shopping-cart-full"></i>
+                        </div>
+                        <div class="cart-top-icon">
+                            <i class="ti-location-pin"></i>
+                        </div>
+                        <div class="cart-top-icon">
+                            <i class="ti-money"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-contain">
+                    <div class="cart-contain-left">
+                        <table>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                                <th>Xóa</th>
+                            </tr>
+                            <!-- San pham trong gio de thanh toan -->
+                            <tr>
+                                <td>
+                                    <img src="./assets/image/prd_sale/prd_s1.png" alt="">
+                                </td>
+                                <td>
+                                    <p>
+                                        Chuột game Asus CERBERUS MS 00478163
+                                    </p>
+                                </td>
+                                <td>
+                                    <input type="number" value="1" min="1">
+                                </td>
+                                <td>
+                                    <p>
+                                        200.000<sup>đ</sup>
+                                    </p>
+                                </td>
+                                <td>
+                                    <span>
+                                        <i class="ti-close cart-icon-del-btn"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./assets/image/prd_sale/prd_s3.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p>
+                                        Mainboard Asrock B560M PRO4 MS 00772733
+                                    </p>
+                                </td>
+                                <td>
+                                    <input type="number" value="1" min="1">
+                                </td>
+                                <td>
+                                    <p>
+                                        2.799.000<sup>đ</sup>
+                                    </p>
+                                </td>
+                                <td>
+                                    <span>
+                                        <i class="ti-close cart-icon-del-btn"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="cart-content-right">
+                        <table>
+                            <tr>
+                                <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
+                            </tr>
+                            <tr>
+                                <td>TỔNG SẢN PHẨM</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>TỔNG TIỀN HÀNG</td>
+                                <td>
+                                    <p>2.999.000<sup>đ</sup></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>TẠM TÍNH</td>
+                                <td>
+                                    <p>
+                                        <b>2.999.000<sup>đ</sup></b>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <div class="cart-content-right__desc">
+                            <p>
+                                Bạn sẽ được <b>miễn phí SHIP</b> khi đơn hàng của bạn có tổng giá trị
+                                trên <b>2.000.00<sup>đ</sup></b>
+                            </p>
+                            <p class="text-red text-font">
+                                Mua thêm <b>0<sup>đ</sup></b> để được miễn phí <b>SHIP</b>
+                            </p>
+                        </div>
+
+                        <div class="cart-content-right__btn">
+                            <button><a href="./index.html">TIẾP TỤC MUA HÀNG</a></button>
+                            <button><a href="./delivery.html">THANH TOÁN</a></button>
+                        </div>
+                        <div class="cart-content-right__login">
+                                <h2>Tài khoản SNAKE-SHOP</h2>
+                                <p>
+                                    Hãy <a href="./dangnhap.html" class="text-gold">đăng nhập</a> tài khoản của bạn để tích điểm mua hàng tại SHOP.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------- END OF SHOPPING CART -------------- -->
+
+        <div id="contact">
+            <div class="contact-product row">
+                <div class="contact-heading row">
+                    <i class="ti-pencil-alt"></i>
+                    <h1>CONTACT</h1>
+                </div>
+                <div class="contact-form">
+                    <div class="contact-form-left">
+                        <p>
+                            <i class="ti-location-pin"></i>
+                            <span>Thanh Hoa City</span>
+                        </p>
+                        <p>
+                            <i class="ti-mobile"></i>
+                            <span>Phone: +84 19103100162</span>
+                        </p>
+                        <p>
+                            <i class="ti-email"></i>
+                            <span>Email: email@hotmail.com</span>
+                        </p>
+                    </div>
+                    <div class="contact-form-right">
+                        <form action="">
+                            <div class="cfr-top">
+                                <div class="cfr-top-row cfr-tr-left">
+                                    <input type="text" placeholder="Name" required class="form-input">
+                                </div>
+                                <div class="cfr-top-row cfr-tr-right">
+                                    <input type="email" placeholder="Enter Email" required class="form-input">
+                                </div>
+                            </div>
+                            <div class="cfr-bottom">
+                                <input type="text" placeholder="Message" required class="form-input">
+                            </div>
+                            <input type="submit" value="SEND" class="cfr-btn"></input>
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------- END OF CONTACT ---------------- -->
+        <div id="footer" class="row">
+            <h1 class="ftd-name">Tống Bá Quang Anh</h1>
+            <div class="ftd-birthday row">
+                <h1>Birthday</h1>
+                <input type="date" value="2001-10-20">
+            </div>
+        </div>
+        <!-- -------------- END OF FOOTER -------------- -->
+    </div>
+</body>
+
+<!-- ---------- Link JavaScript ---------- -->
+<script src="./style.js"></script>
+
+</html>
